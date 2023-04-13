@@ -1,0 +1,5 @@
+edu\eci\cvds\model\User.class
+edu\eci\cvds\controllers\UserBean.class
+edu\eci\cvds\repositories\UserRepository.class
+edu\eci\cvds\services\UserService.class
+edu\eci\cvds\SpringApplication.class

@@ -1,6 +1,5 @@
-package edu.eci.cvds.servlet;
+package edu.eci.cvds;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
@@ -9,9 +8,9 @@ import javax.servlet.ServletContext;
 import java.util.Arrays;
 
 @SpringBootApplication
-public class Main {
+public class SpringApplication {
     public static void main (String[] args) {
-        SpringApplication.run(Main.class, args);
+        org.springframework.boot.SpringApplication.run(SpringApplication.class, args);
     }
 
     @Bean
