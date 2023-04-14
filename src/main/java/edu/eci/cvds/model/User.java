@@ -41,12 +41,19 @@ public class User {
     }
 
 
-
     @Override
     public String toString() {
         return "Usuario{" +
                 "id='" + id + '\'' +
                 ", password='" + password + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return id.equals(user.id) && password.equals(user.password);
     }
 }

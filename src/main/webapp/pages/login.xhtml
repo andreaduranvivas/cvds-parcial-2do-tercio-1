@@ -19,21 +19,18 @@
 
 
             <div class="field">
-                <p:outputLabel for="username" styleClass="block">Username</p:outputLabel>
+                <p:outputLabel for="username" styleClass="block">Username </p:outputLabel>
                 <p:inputText id="username" styleClass="block ui-state-error"/>
             </div>
 
 
             <div class="field grid">
-                <p:outputLabel for="pwd1" styleClass="col-fixed" style="width:100px" value="Password"/>
+                <p:outputLabel for="pwd1" styleClass="col-fixed" style="width:100px" value="Password "/>
                 <p:password id="pwd1" value="#{passwordView.password5}" match="pwd2" label="Password"/>
             </div>
 
-            <div class="card">
-
-                <p:button value=" Login " />
-                <p:button value="Disabled" disabled="true" outcome="guess"/>
-            </div>
+            <p:commandButton value=" Login " action="guess.xhtml"/>
+        </div>
     </h:form>
 </h:body>
 </html>
